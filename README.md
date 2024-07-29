@@ -1,1 +1,1 @@
-# GodotXR-Prototype
+# GodotXR Writeup
