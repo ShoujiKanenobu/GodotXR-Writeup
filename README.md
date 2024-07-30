@@ -41,9 +41,12 @@ func enable_passthrough() -> bool:
 There are 3 Environment blend modes in Godot. Opaque, Additive, and Alpha. Both Additive and Alpha allows for passthrough, but is **device dependent** on which one is supported. This code changes the requisite settings to allow for passthrough, asking for what blend mode is supported and switching to that mode. It is also incredibly important that the viewport's transparency is set to 0 as seen in the last line before we return true. More of the nuances for passthrough can be seen [here.](https://docs.godotengine.org/en/stable/tutorials/xr/openxr_passthrough.html)
 
 Run this code on your _start_session event and you're good to go. Add as many 3D objects to you scene as you want and see them in their primitive glory. 
+<div>
+<img src="https://github.com/ShoujiKanenobu/GodotXR-Writeup/blob/main/XRBall.png" width="250" height="400">
+<img src="https://github.com/ShoujiKanenobu/GodotXR-Writeup/blob/main/XRCubeAndTexture.png" width="250" height="400">
+</div>
 
-![]
-
+Done!
 
 # Resources/Links
 
