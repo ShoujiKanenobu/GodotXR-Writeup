@@ -57,6 +57,9 @@ Done!
 
 # Resources/Links
 
+These links are what I would consider essential in piecing together how everything works.
+
 https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4
 https://docs.godotengine.org/en/stable/classes/class_webxrinterface.html
 https://docs.godotengine.org/en/stable/tutorials/xr/openxr_passthrough.html
+https://docs.godotengine.org/en/latest/tutorials/xr/ar_passthrough.html
