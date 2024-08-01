@@ -1,7 +1,8 @@
 # GodotXR Writeup
 
 The prototype can be seen here: https://shouji.itch.io/godotxr-test 
-
+There is a bug where re-entering AR mode causes the screen to be black. You can get around this issue by refreshing the page.
+I think it has something to do with the cleanup of exiting AR mode, but I can't find the issue. 
 ## Introduction
 I was asked to look into and get a grasp on how Godot's WebXR features work and to build out a quick prototype. The prototype was to be a very simple webpage where the user can view a Cube in AR. This is a quick write up of how that process went. Before getting into it, for the sake of clarity (and because these terms are sometimes used interchangably), I want to quickly define VR, AR, and XR.
 + VR (Virtual Reality): Where the users view is solely the 3D virtual world, and the real world is not meant to be seen.
