@@ -16,9 +16,9 @@ I was asked to look into and get a grasp on how Godot's WebXR features work and 
 Ok, now lets dive into it.
 
 ### Getting started
-The tools for creating XR apps in Godot are already there and awesome for quick development. So much of the work is already done for you if you use the [Godot XR Tools](https://github.com/GodotVR/godot-xr-tools) Asset from Godot's built-in Asset Library. Other than that, David Snopek (The person who wrote the feature) has a tutorial on getting started in WebXR, and it can be seen [here.](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4) Using Snopek's tutorial as a start, the tutorial already has set up everything we need to export and test on smartphone browsers. However, doing so puts us in a VR world rather than an AR one. 
+There are already tools in place for quickly implementing XR in Godot. The [Godot XR Tools](https://github.com/GodotVR/godot-xr-tools) Asset from Godot's built-in Asset Library provides everything you need for basic XR functionality. Other than that, David Snopek (The person who created the feature) has a tutorial on getting started in WebXR, and it can be seen [here.](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4) I started off by using these two resources and got something working within an hour or so. However, these tutorials helped me create a VR prototype rather than an AR one. 
 
-So how can we get the real world and the virtual one to be drawn? 
+So how can we turn a VR game into an AR one?
 
 ### Passthrough
 As stated in the Godot Docs
