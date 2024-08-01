@@ -49,8 +49,8 @@ func _webxr_session_ended() -> void:
 	$CanvasLayer/Button.visible = true
 	$CanvasLayer2.visible = false
 	get_viewport().use_xr = false
-	# There is a bug here where cleanup isn't properly done, so if you try to re enter xr mode it
-	# is just a black screen
+	get_viewport().transparent_bg = false
+	disable_passthrough()
 	
 func _webxr_session_failed(message: String) -> void:
 	OS.alert("Failed to initialize: " + message)
@@ -71,4 +71,11 @@ func enable_passthrough() -> bool:
 		else:
 			return false
 	get_viewport().transparent_bg = true
+	return true
+
+func disable_passthrough() -> bool:
+	var xr_interface: XRInterface = XRServer.primary_interface
+	xr_interface.stop_passthrough()
+	xr_interface.set_environment_blend_mode(xr_interface.XR_ENV_BLEND_MODE_OPAQUE)
+	get_viewport().transparent_bg = false
 	return true
